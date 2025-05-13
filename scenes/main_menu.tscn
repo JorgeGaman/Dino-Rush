@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://sk8vtpg87c0a"]
+
+[ext_resource type="Script" uid="uid://crqceuauatmwp" path="res://scripts/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://bahqxww3g4j0g" path="res://assets/img/intro/background intro.jpg" id="1_l6cm7"]
+[ext_resource type="Theme" uid="uid://bi7dul0iq221p" path="res://assets/themes/Default.tres" id="3_wu84c"]
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="4_8ln24"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ekxnf")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1159.0
+offset_bottom = 648.0
+texture = ExtResource("1_l6cm7")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 357.0
+offset_top = 50.0
+offset_right = 775.0
+offset_bottom = 181.0
+theme = ExtResource("3_wu84c")
+theme_override_fonts/font = ExtResource("4_8ln24")
+text = "DINO RUSH"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 807.0
+offset_top = 249.0
+offset_right = 1023.0
+offset_bottom = 334.0
+theme = ExtResource("3_wu84c")
+theme_override_fonts/font = ExtResource("4_8ln24")
+theme_override_font_sizes/font_size = 40
+text = "START"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 808.0
+offset_top = 341.0
+offset_right = 1023.0
+offset_bottom = 429.0
+theme = ExtResource("3_wu84c")
+theme_override_fonts/font = ExtResource("4_8ln24")
+theme_override_font_sizes/font_size = 40
+text = "EXIT"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

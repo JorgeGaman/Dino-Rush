@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://lotwuige1aee"]
+
+[ext_resource type="Theme" uid="uid://bi7dul0iq221p" path="res://assets/themes/Default.tres" id="1_wqhvx"]
+[ext_resource type="FontFile" uid="uid://s15272omc2m3" path="res://assets/fonts/retro.ttf" id="1_ykggm"]
+
+[node name="GameOver" type="CanvasLayer"]
+
+[node name="Restart" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -27.5
+offset_right = 125.0
+offset_bottom = 27.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wqhvx")
+theme_override_fonts/font = ExtResource("1_ykggm")
+theme_override_font_sizes/font_size = 40
+text = "RESTART"
+
+[node name="Menu" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = 42.0
+offset_right = 125.0
+offset_bottom = 99.3597
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_wqhvx")
+theme_override_fonts/font = ExtResource("1_ykggm")
+theme_override_font_sizes/font_size = 40
+text = "MENU
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 184.0
+offset_top = 590.0
+offset_right = 963.0
+offset_bottom = 638.0
+theme_override_fonts/font = ExtResource("1_ykggm")
+theme_override_font_sizes/font_size = 31
+text = "DEV BY JORGE L. - ALEJANDRA Q. - JUAN V."
+horizontal_alignment = 1
+vertical_alignment = 1
